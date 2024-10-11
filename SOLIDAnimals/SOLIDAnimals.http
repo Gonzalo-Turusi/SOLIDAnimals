@@ -1,0 +1,6 @@
+@SOLIDAnimals_HostAddress = http://localhost:5271
+
+GET {{SOLIDAnimals_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

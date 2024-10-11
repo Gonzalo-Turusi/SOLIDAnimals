@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDAnimals", "SOLIDAnimals\SOLIDAnimals.csproj", "{DE45A51F-74E7-4DF4-A794-E6A58606C8E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDAnimals.Test", "SOLIDAnimals.Test\SOLIDAnimals.Test.csproj", "{DF98C812-82CA-46AD-BF65-6E6367C935EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE45A51F-74E7-4DF4-A794-E6A58606C8E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE45A51F-74E7-4DF4-A794-E6A58606C8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE45A51F-74E7-4DF4-A794-E6A58606C8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE45A51F-74E7-4DF4-A794-E6A58606C8E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF98C812-82CA-46AD-BF65-6E6367C935EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF98C812-82CA-46AD-BF65-6E6367C935EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF98C812-82CA-46AD-BF65-6E6367C935EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF98C812-82CA-46AD-BF65-6E6367C935EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30751991-107A-4070-A8FE-FF4DD4B0D09D}
+	EndGlobalSection
+EndGlobal
