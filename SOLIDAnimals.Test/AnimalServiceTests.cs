@@ -10,7 +10,7 @@ namespace SOLIDAnimals.Tests
     [TestClass]
     public class AnimalServiceTests
     {
-        private AnimalService _animalService;
+        private AnimalService? _animalService;
 
         [TestInitialize]
         public void Setup()
@@ -26,10 +26,10 @@ namespace SOLIDAnimals.Tests
         public void RemoveAnimal_ShouldThrowException_WhenAnimalNotFound()
         {
             // Arrange
-            var animal = new Mock<Animal>("TestAnimal", "TestSpecies", 1).Object;
+            var animalName = "TestAnimal";
 
             // Act
-            _animalService.RemoveAnimal(animal);
+            _animalService.RemoveAnimal(animalName);
 
             // Assert is handled by ExpectedException
         }
@@ -41,15 +41,12 @@ namespace SOLIDAnimals.Tests
             var animal = new Mock<Animal>("TestAnimal", "TestSpecies", 1).Object;
             _animalService.AddAnimal(animal);
 
-            // Act & Assert
-            try
-            {
-                _animalService.RemoveAnimal(animal);
-            }
-            catch (KeyNotFoundException)
-            {
-                Assert.Fail("Expected no exception, but got KeyNotFoundException");
-            }
+            // Act
+            _animalService.RemoveAnimal(animal.Name);
+
+            // Assert
+            var animals = _animalService.GetAllAnimals();
+            CollectionAssert.DoesNotContain((System.Collections.ICollection)animals, animal);
         }
 
         [TestMethod]

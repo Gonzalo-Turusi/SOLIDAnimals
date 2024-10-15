@@ -50,10 +50,10 @@ namespace SOLIDAnimals.Controllers
 
         // POST: api/animals/
         [HttpDelete()]
-        public IActionResult DeleteAnimal([FromBody] Animal animal)
+        public IActionResult DeleteAnimal([FromBody] string name)
         {
-            _animalService.RemoveAnimal(animal);
-            return Ok("You delete this animal :(");
+            _animalService.RemoveAnimal(name);
+            return Ok("You have deleted " + name + " :(");
         }
 
         [HttpPut("YouGetHome")]

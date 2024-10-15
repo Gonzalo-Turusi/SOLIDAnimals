@@ -22,12 +22,9 @@ namespace SOLIDAnimals.Services
             _animals.Add(animal);
         }
 
-        public void RemoveAnimal(Animal animal)
+        public void RemoveAnimal(string name)
         {
-            if (!_animals.Contains(animal))
-            {
-                throw new KeyNotFoundException("Animal not found");
-            }
+            var animal = _animals.FirstOrDefault(a => a.Name == name) ?? throw new KeyNotFoundException(name + " not found");
             _animals.Remove(animal);
         }
 

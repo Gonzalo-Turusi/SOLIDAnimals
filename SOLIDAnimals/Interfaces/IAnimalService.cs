@@ -8,7 +8,7 @@ namespace SOLIDAnimals.Interfaces
     {
         IEnumerable<Animal> GetAllAnimals();
         void AddAnimal(Animal animal);
-        void RemoveAnimal(Animal animal);
+        void RemoveAnimal(string animal);
         void ReceiveOwner();
         void GoodbyeToOwner();
     }
